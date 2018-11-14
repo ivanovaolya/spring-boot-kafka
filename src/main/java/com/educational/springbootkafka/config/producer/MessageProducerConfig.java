@@ -1,4 +1,4 @@
-package com.educational.springbootkafka.config;
+package com.educational.springbootkafka.config.producer;
 
 import java.util.HashMap;
 import java.util.Map;
