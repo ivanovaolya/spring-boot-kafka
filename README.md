@@ -47,3 +47,9 @@ $ bin/windows/kafka-console-consumer.bat --bootstrap-server localhost:9092 --top
 $ gradlew bootRun
 > ./gradlew bootRun
 ```
+### Testing the app
+```sh
+curl -X POST http://localhost:8080/kafka/publish/HelloWorldMessage
+curl -d '{"payload": "This is another test message", "date": "2018-11-18T18:25:43.511Z"}' \
+  > -H "Content-Type: application/json" -X POST http://localhost:8080/kafka/publish/
+```
